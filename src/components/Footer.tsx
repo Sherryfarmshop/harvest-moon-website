@@ -22,7 +22,7 @@ export default function Footer() {
             alt="Harvest Moon Farm Shop"
             width={120}
             height={120}
-            className="rounded-full mx-auto"
+            className="rounded-lg mx-auto"
           />
         </div>
 
