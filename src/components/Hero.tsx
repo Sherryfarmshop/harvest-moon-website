@@ -16,7 +16,7 @@ export default function Hero() {
           A Place to Slow Down, Gather, and Take a Little Piece of the Farm Home
         </h1>
         <p className="font-lora text-lg sm:text-xl text-cream/90 text-shadow-sm tracking-wide">
-          Harvest Moon Farm Shop &amp; Gathered Goods
+          Harvest Moon Farm Shop
         </p>
       </div>
     </section>
