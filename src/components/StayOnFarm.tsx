@@ -45,10 +45,10 @@ export default function StayOnFarm() {
                 Book on VRBO
               </a>
               <a
-                href="#book-direct"
+                href="tel:7347160475"
                 className="inline-block border-2 border-forest-green text-forest-green font-source font-semibold px-8 py-3 rounded-md hover:bg-forest-green hover:text-soft-white transition-colors tracking-wide text-sm uppercase"
               >
-                Book Direct
+                Call to Book: 734-716-0475
               </a>
             </div>
           </div>
