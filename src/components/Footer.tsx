@@ -20,8 +20,8 @@ export default function Footer() {
           <Image
             src="/images/logo.jpg"
             alt="Harvest Moon Farm Shop"
-            width={120}
-            height={120}
+            width={160}
+            height={160}
             className="rounded-lg mx-auto"
           />
         </div>
