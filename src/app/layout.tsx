@@ -21,13 +21,13 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: 'Harvest Moon Farm Shop & Gathered Goods | Northern Michigan Farm Market',
+  title: 'Harvest Moon Farm Shop | Northern Michigan Farm Market near Charlevoix',
   description:
     'A cozy Northern Michigan farm market near Charlevoix. Farm fresh eggs, seasonal produce, soft serve ice cream, curated farm boxes, gathered goods, and peaceful farm stays. Stop in, slow down, and take a little piece of the farm home.',
   keywords:
     'Northern Michigan farm shop, Charlevoix farm market, farm fresh eggs, ice cream Northern Michigan, farm stay Charlevoix, gathered goods, farm boxes, soft serve, US-31 Charlevoix',
   openGraph: {
-    title: 'Harvest Moon Farm Shop & Gathered Goods',
+    title: 'Harvest Moon Farm Shop',
     description:
       'A cozy Northern Michigan farm market near Charlevoix. Farm fresh eggs, ice cream, curated farm boxes, and peaceful farm stays.',
     type: 'website',
