@@ -22,18 +22,21 @@ export default function Intro() {
             </h2>
             <div className="space-y-4 font-lora text-dark-text/85 text-lg leading-relaxed">
               <p>
-                Welcome to Harvest Moon Farm Shop, a cozy Northern Michigan farm
-                market where the pace is slower, the air feels different, and
+                Welcome to Harvest Moon Farm Shop, a cozy farm market in Northern
+                Michigan where the pace is slower, the air feels different, and
                 everything is chosen with intention.
               </p>
               <p>
-                Tucked into the countryside of Northern Michigan, our farm shop is
-                more than a place to shop—it&apos;s a place to experience. Whether
-                you&apos;re stopping by our farm stand on a summer weekend, picking
-                up farm fresh eggs and seasonal local produce for the grill, enjoying
-                a scoop of ice cream on a warm afternoon, or gathering a thoughtfully
-                curated farm box for your stay, we&apos;ve created a space that feels
-                simple, warm, and real.
+                Tucked into the countryside just south of Charlevoix, our farm shop
+                is more than a place to shop — it&apos;s a place to experience.
+                Stop by our farm stand on a summer weekend for farm fresh eggs and
+                seasonal produce. Grab a scoop of soft serve ice cream on a warm
+                afternoon. Pick up a thoughtfully curated farm box filled with
+                local goods. Or just slow down and take in the view.
+              </p>
+              <p>
+                We&apos;ve created a space that feels simple, warm, and real —
+                and we think you&apos;ll want to stay awhile.
               </p>
             </div>
           </div>
