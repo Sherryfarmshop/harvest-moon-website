@@ -39,8 +39,8 @@ export default function Navbar() {
             <Image
               src="/images/logo.jpg"
               alt="Harvest Moon Farm Shop"
-              width={60}
-              height={60}
+              width={90}
+              height={90}
               className="rounded-full"
             />
           </a>

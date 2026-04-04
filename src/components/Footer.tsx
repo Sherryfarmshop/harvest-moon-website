@@ -20,14 +20,14 @@ export default function Footer() {
           <Image
             src="/images/logo.jpg"
             alt="Harvest Moon Farm Shop"
-            width={80}
-            height={80}
+            width={120}
+            height={120}
             className="rounded-full mx-auto"
           />
         </div>
 
         <p className="font-playfair text-xl text-cream mb-6">
-          Harvest Moon Farm Shop &amp; Gathered Goods
+          Harvest Moon Farm Shop
         </p>
 
         <div className="font-lora text-sm space-y-1 mb-6 text-cream/65">
@@ -48,8 +48,7 @@ export default function Footer() {
         <div className="w-16 h-px bg-cream/20 mx-auto mb-6" />
 
         <p className="text-xs text-cream/40 font-source">
-          &copy; 2026 Harvest Moon Farm Shop &amp; Gathered Goods. All rights
-          reserved.
+          &copy; 2026 Harvest Moon Farm Shop. All rights reserved.
         </p>
       </div>
     </footer>
