@@ -6,7 +6,7 @@ export default function GardenWalk() {
   return (
     <main>
       <Navbar />
-      <section className="relative min-h-screen">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
           src="/images/garden-walk.jpg"
           alt="Garden Walk"
@@ -14,6 +14,14 @@ export default function GardenWalk() {
           className="object-cover"
           priority
         />
+        <div className="relative z-10 text-center px-6">
+          <h1 className="font-playfair text-4xl sm:text-5xl text-cream drop-shadow-lg mb-3">
+            Garden Walk
+          </h1>
+          <p className="font-lora text-lg sm:text-xl text-cream/80 drop-shadow-md italic">
+            in the works
+          </p>
+        </div>
       </section>
       <Footer />
     </main>
