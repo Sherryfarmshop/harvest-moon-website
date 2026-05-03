@@ -6,24 +6,20 @@ export default function GardenWalk() {
   return (
     <main>
       <Navbar />
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
           src="/images/garden-walk.jpg"
-          alt="Garden Walk — Garden in the works"
+          alt="Garden Walk"
           fill
           className="object-cover"
           priority
         />
-        <div className="relative z-10 text-center">
-          <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl text-cream mb-4 drop-shadow-lg">
+        <div className="relative z-10 text-center px-6">
+          <h1 className="font-playfair text-4xl sm:text-5xl text-cream drop-shadow-lg">
             Garden Walk
           </h1>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="w-12 h-px bg-cream/60" />
-            <span className="text-cream/80 text-2xl">✿❀✿❀✿</span>
-            <div className="w-12 h-px bg-cream/60" />
-          </div>
-          <p className="font-playfair text-xl sm:text-2xl text-cream/90 drop-shadow-md">
+          <div className="w-16 h-0.5 bg-cream/60 mx-auto my-4" />
+          <p className="font-lora text-lg sm:text-xl text-cream/90 drop-shadow-md">
             Garden in the works
           </p>
         </div>
