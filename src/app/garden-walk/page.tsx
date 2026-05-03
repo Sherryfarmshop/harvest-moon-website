@@ -14,13 +14,15 @@ export default function GardenWalk() {
           className="object-cover"
           priority
         />
-        <div className="relative z-10 pt-24 sm:pt-32 text-center px-6">
-          <h1 className="font-playfair text-4xl sm:text-5xl text-cream drop-shadow-lg mb-3">
-            Garden Walk
-          </h1>
-          <p className="font-lora text-lg sm:text-xl text-cream/80 drop-shadow-md italic">
-            in the works
-          </p>
+        <div className="absolute inset-x-0 top-0 h-[45%] z-10 flex items-center justify-center">
+          <div className="text-center px-6">
+            <h1 className="font-playfair text-4xl sm:text-5xl text-cream drop-shadow-lg mb-3">
+              Garden Walk
+            </h1>
+            <p className="font-lora text-xl sm:text-2xl text-cream/80 drop-shadow-md italic">
+              in the works
+            </p>
+          </div>
         </div>
       </section>
       <Footer />
