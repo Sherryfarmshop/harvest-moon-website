@@ -30,8 +30,7 @@ export default function Intro() {
                 Tucked into the countryside just south of Charlevoix, our farm shop
                 is more than a place to shop — it&apos;s a place to experience.
                 Stop by our farm stand on a summer weekend for farm fresh eggs and
-                seasonal produce. Grab a scoop of soft serve ice cream on a warm
-                afternoon. Pick up a thoughtfully curated farm box filled with
+                seasonal produce. Pick up a thoughtfully curated farm box filled with
                 local goods. Or just slow down and take in the view.
               </p>
               <p>

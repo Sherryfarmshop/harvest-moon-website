@@ -3,7 +3,6 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Intro from '@/components/Intro';
 import WhatYoullFind from '@/components/WhatYoullFind';
-import IceCreamFeature from '@/components/IceCreamFeature';
 import Gallery from '@/components/Gallery';
 import StayOnFarm from '@/components/StayOnFarm';
 import Visit from '@/components/Visit';
@@ -17,7 +16,6 @@ export default function Home() {
       <Hero />
       <Intro />
       <WhatYoullFind />
-      <IceCreamFeature />
       <Gallery />
       <StayOnFarm />
       <Visit />

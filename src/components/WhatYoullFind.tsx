@@ -14,12 +14,6 @@ const cards = [
     copy: "Thoughtfully curated for slow mornings, easy meals, and cozy moments. Each box is filled with simple, useful things—whether you're making breakfast, brewing coffee, or firing up the grill.",
   },
   {
-    title: 'Ice Cream & Treats',
-    image: '/images/website-icecream.jpg',
-    alt: 'Family enjoying ice cream at the farm',
-    copy: 'A sweet pause in your visit. Simple, nostalgic treats meant to be enjoyed right here on the farm—best shared, best savored, and best with a little sunshine.',
-  },
-  {
     title: 'Gathered Goods',
     image: '/images/website-gathered-goods.jpg',
     alt: 'Vintage stoneware crocks, wooden utensils, and gathered home goods',
