@@ -37,7 +37,7 @@ export default function StayOnFarm() {
             </div>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://cal.com/harvestmoonfarmshop"
+                href="https://cal.com/harvestmoonfarmshop/farm-stay-booking"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-barn-red text-soft-white font-source font-semibold px-8 py-3 rounded-md hover:bg-barn-red/90 transition-colors tracking-wide text-sm uppercase"
