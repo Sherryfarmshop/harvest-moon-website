@@ -37,10 +37,18 @@ export default function StayOnFarm() {
             </div>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://www.vrbo.com/5195624"
+                href="https://cal.com/harvestmoonfarmshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-barn-red text-soft-white font-source font-semibold px-8 py-3 rounded-md hover:bg-barn-red/90 transition-colors tracking-wide text-sm uppercase"
+              >
+                Book Direct
+              </a>
+              <a
+                href="https://www.vrbo.com/5195624"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border-2 border-barn-red text-barn-red font-source font-semibold px-8 py-3 rounded-md hover:bg-barn-red hover:text-soft-white transition-colors tracking-wide text-sm uppercase"
               >
                 Book on VRBO
               </a>
