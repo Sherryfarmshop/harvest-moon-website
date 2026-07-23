@@ -19,12 +19,12 @@ export default function WelcomeReservations() {
                 While our farm shop opens in 2027, you can already reserve our pasture-raised chickens for next season.
               </p>
               <p>
-                Our chickens are raised on fresh pasture, moved regularly, and grown the way nature intended — for exceptional flavor and quality.
+                Our chickens are raised on fresh pasture, moved regularly, and grown the way nature intended—for exceptional flavor and quality.
               </p>
               <p>
                 As our farm grows, you&apos;ll also find handcrafted goods, seasonal produce, fresh eggs, and thoughtfully curated products that celebrate simple country living.
               </p>
-              <p className="font-playfair italic text-dark-text/70">
+              <p className="font-playfair italic text-dark-text/60 text-base mt-2">
                 We look forward to welcoming you to the farm.
               </p>
             </div>
@@ -47,25 +47,25 @@ export default function WelcomeReservations() {
             </h2>
             <div className="space-y-5">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-sm">1</div>
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-xs">1</div>
                 <p className="font-lora text-sm text-dark-text/80 leading-relaxed">
                   Reserve your birds online with a $25 deposit per bird.
                 </p>
               </div>
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-sm">2</div>
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-xs">2</div>
                 <p className="font-lora text-sm text-dark-text/80 leading-relaxed">
                   We&apos;ll send updates as our birds grow on pasture.
                 </p>
               </div>
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-sm">3</div>
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-xs">3</div>
                 <p className="font-lora text-sm text-dark-text/80 leading-relaxed">
                   We&apos;ll contact you before pickup to confirm details.
                 </p>
               </div>
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-sm">4</div>
+                <div className="flex-shrink-0 w-7 h-7 rounded-full bg-forest-green text-cream flex items-center justify-center font-source font-bold text-xs">4</div>
                 <p className="font-lora text-sm text-dark-text/80 leading-relaxed">
                   Pick up your chickens at our farm or local pickup location and pay the remaining balance.
                 </p>
@@ -75,7 +75,7 @@ export default function WelcomeReservations() {
             <div className="mt-8">
               <a
                 href="#reserve"
-                className="inline-block border-2 border-forest-green text-forest-green hover:bg-forest-green hover:text-cream px-6 py-3 font-source font-semibold text-sm uppercase tracking-wider transition-all duration-300"
+                className="inline-block bg-forest-green hover:bg-forest-green/90 text-cream px-6 py-3 font-source font-semibold text-xs uppercase tracking-[0.15em] transition-colors"
               >
                 Reserve My Chickens
               </a>

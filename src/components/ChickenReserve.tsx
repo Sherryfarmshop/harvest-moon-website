@@ -17,7 +17,7 @@ const features = [
   {
     icon: '🤍',
     title: 'Raised with Care',
-    desc: 'We treat every bird with respect — because it makes a difference.',
+    desc: 'We treat every bird with respect—because it makes a difference.',
   },
 ];
 
