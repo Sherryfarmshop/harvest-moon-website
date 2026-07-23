@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function OpeningBanner() {
   return (
-    <section className="w-full">
+    <section className="w-full leading-[0]">
       <Image
         src="/images/opening-banner.jpg"
         alt="Harvest Moon Farm Shop opens in 2027 with handcrafted goods, seasonal foods, and locally raised products."
