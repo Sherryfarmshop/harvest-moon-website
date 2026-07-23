@@ -2,6 +2,7 @@ import Banner from '@/components/Banner';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Intro from '@/components/Intro';
+import ChickenReserve from '@/components/ChickenReserve';
 import WhatYoullFind from '@/components/WhatYoullFind';
 import Gallery from '@/components/Gallery';
 import StayOnFarm from '@/components/StayOnFarm';
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Intro />
+      <ChickenReserve />
       <WhatYoullFind />
       <Gallery />
       <StayOnFarm />

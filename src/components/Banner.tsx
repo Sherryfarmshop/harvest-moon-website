@@ -8,17 +8,16 @@ export default function Banner() {
   if (!visible) return null;
 
   return (
-    <div className="bg-cream border-b border-warm-brown/20 text-dark-text text-sm py-2 px-4 relative text-center font-lora">
+    <div className="bg-forest-green text-cream text-sm py-2.5 px-4 relative text-center font-lora tracking-wide">
       <span>
-        We occasionally close for private farm stays —{' '}
-        <a href="#visit" className="underline hover:text-barn-red transition-colors">
-          check our calendar
-        </a>{' '}
-        before visiting.
+        🐔 Reservations Now Open for 2027 Pasture-Raised Chickens —{' '}
+        <a href="#reserve" className="underline font-semibold hover:text-harvest-gold transition-colors">
+          Reserve Yours Today
+        </a>
       </span>
       <button
         onClick={() => setVisible(false)}
-        className="absolute right-3 top-1/2 -translate-y-1/2 text-warm-brown hover:text-dark-text transition-colors text-lg leading-none"
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-cream/60 hover:text-cream transition-colors text-lg leading-none"
         aria-label="Dismiss banner"
       >
         ×
