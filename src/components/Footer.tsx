@@ -15,7 +15,7 @@ export default function Footer() {
               </p>
               <a
                 href="#reserve"
-                className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] text-white px-6 py-3 font-source font-semibold text-xs uppercase tracking-[0.15em] transition-colors rounded-sm"
+                className="inline-block border-2 border-[#4A5D3A] bg-[#4A5D3A] hover:bg-[#3E4F31] text-white px-6 py-3 font-source font-semibold text-xs uppercase tracking-[0.15em] transition-colors rounded-sm"
               >
                 Reserve My Chickens
               </a>
@@ -28,8 +28,9 @@ export default function Footer() {
                 We&apos;re happy to help!<br />
                 Reach out anytime.
               </p>
-              <p className="font-lora text-sm text-[#F5F0E8]/60">
-                <a href="mailto:hello@harvestmoonfarmshop.com" className="hover:text-[#D4A017] transition-colors underline underline-offset-2">
+              <p className="font-lora text-sm text-[#F5F0E8]/60 flex items-center gap-2 justify-center md:justify-start">
+                <span>✉</span>
+                <a href="mailto:hello@harvestmoonfarmshop.com" className="hover:text-[#D4A017] transition-colors">
                   hello@harvestmoonfarmshop.com
                 </a>
               </p>
@@ -43,8 +44,14 @@ export default function Footer() {
                 and what we&apos;re growing.
               </p>
               <div className="flex gap-5 justify-center md:justify-start">
-                <a href="#" className="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition-colors text-sm font-source uppercase tracking-wider" aria-label="Facebook">Facebook</a>
-                <a href="#" className="text-[#F5F0E8]/50 hover:text-[#F5F0E8] transition-colors text-sm font-source uppercase tracking-wider" aria-label="Instagram">Instagram</a>
+                <a href="#" className="text-[#F5F0E8]/60 hover:text-[#F5F0E8] transition-colors text-2xl font-bold" aria-label="Facebook">f</a>
+                <a href="#" className="text-[#F5F0E8]/60 hover:text-[#F5F0E8] transition-colors text-2xl" aria-label="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <circle cx="12" cy="12" r="5"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -60,7 +67,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-8 text-xs text-[#8B7355] font-source uppercase tracking-[0.1em]">
             <a href="#home" className="hover:text-[#3D2B1F] transition-colors">Our Farm</a>
-            <a href="#offerings" className="hover:text-[#3D2B1F] transition-colors">Shop</a>
+            <a href="#offerings" className="hover:text-[#3D2B1F] transition-colors">Shop (Opening 2027)</a>
             <a href="#visit" className="hover:text-[#3D2B1F] transition-colors">Farm Stand</a>
             <a href="#contact" className="hover:text-[#3D2B1F] transition-colors">Contact</a>
           </div>
