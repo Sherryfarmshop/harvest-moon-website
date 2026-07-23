@@ -1,4 +1,3 @@
-import Banner from '@/components/Banner';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Intro from '@/components/Intro';
@@ -12,7 +11,6 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <main>
-      <Banner />
       <Navbar />
       <Hero />
       <Intro />

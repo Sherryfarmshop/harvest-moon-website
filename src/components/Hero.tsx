@@ -53,7 +53,7 @@ export default function Hero() {
         {/* CTA Button */}
         <a
           href="#reserve"
-          className="inline-block border-2 border-cream/60 text-cream hover:bg-cream hover:text-dark-text px-8 py-3.5 font-source font-semibold text-sm uppercase tracking-[0.2em] transition-all duration-300"
+          className="inline-block bg-forest-green hover:bg-forest-green/90 text-cream px-8 py-3.5 font-source font-semibold text-sm uppercase tracking-[0.2em] transition-all duration-300 shadow-lg"
         >
           Reserve My Chickens
         </a>
