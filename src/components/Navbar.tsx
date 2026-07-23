@@ -1,15 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Our Farm', href: '#gallery' },
-  { label: 'Reserve Chickens', href: '#reserve' },
-  { label: 'Farm Stand', href: '#offerings' },
-  { label: 'Stay With Us', href: '#stay' },
-  { label: 'Visit', href: '#visit' },
+  { label: 'Shop (Opening 2027)', href: '#offerings' },
+  { label: 'Farm Stand', href: '#visit' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -33,29 +31,29 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <a href="#home" className="flex-shrink-0">
-            <Image
-              src="/images/logo.jpg"
-              alt="Harvest Moon Farm Shop"
-              width={80}
-              height={80}
-              className="rounded-lg"
-            />
+        <div className="flex items-center justify-between h-14">
+          {/* Text Logo */}
+          <a href="#home" className="font-playfair text-dark-text text-lg font-semibold">
+            Harvest Moon Farm Shop
           </a>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-dark-text hover:text-barn-red transition-colors text-sm font-medium tracking-wide uppercase font-source"
+                className="text-dark-text hover:text-barn-red transition-colors text-xs font-medium tracking-wide uppercase font-source"
               >
                 {link.label}
               </a>
             ))}
+            <a
+              href="#reserve"
+              className="bg-forest-green hover:bg-forest-green/90 text-cream px-5 py-2 text-xs font-source font-semibold uppercase tracking-wider transition-colors"
+            >
+              Reserve My Chickens
+            </a>
           </div>
 
           {/* Mobile hamburger */}
@@ -100,6 +98,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="#reserve"
+            onClick={handleClick}
+            className="block bg-forest-green text-cream text-center px-5 py-2.5 font-source font-semibold text-sm uppercase tracking-wider mt-2"
+          >
+            Reserve My Chickens
+          </a>
         </div>
       </div>
     </nav>

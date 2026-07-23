@@ -1,8 +1,8 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Intro from '@/components/Intro';
+import OpeningBanner from '@/components/OpeningBanner';
+import WelcomeReservations from '@/components/WelcomeReservations';
 import ChickenReserve from '@/components/ChickenReserve';
-import WhatYoullFind from '@/components/WhatYoullFind';
 import Gallery from '@/components/Gallery';
 import StayOnFarm from '@/components/StayOnFarm';
 import Visit from '@/components/Visit';
@@ -13,9 +13,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Intro />
+      <OpeningBanner />
+      <WelcomeReservations />
       <ChickenReserve />
-      <WhatYoullFind />
       <Gallery />
       <StayOnFarm />
       <Visit />
