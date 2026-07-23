@@ -1,15 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
-
-const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Our Farm', href: '#gallery' },
-  { label: 'Shop (Opening 2027)', href: '#offerings' },
-  { label: 'Farm Stand', href: '#visit' },
-  { label: 'Contact', href: '#contact' },
-];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,82 +13,32 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white shadow-md'
-          : 'bg-white/90 backdrop-blur-sm'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo left */}
-          <a href="#home" className="flex-shrink-0">
-            <Image
-              src="/images/logo.jpg"
-              alt="Harvest Moon Farm Shop"
-              width={50}
-              height={50}
-              className="rounded"
-            />
-          </a>
-
-          {/* Center nav links */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-[#3D2B1F] hover:text-[#8B2500] transition-colors text-xs font-medium tracking-[0.15em] uppercase font-source"
-              >
-                {link.label}
-              </a>
-            ))}
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white'}`}>
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-center h-14 gap-10">
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#home" className="text-[#3D2B1F] text-[11px] font-medium tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Home</a>
+            <a href="#farm" className="text-[#3D2B1F] text-[11px] font-medium tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Our Farm</a>
+            <a href="#shop" className="text-[#3D2B1F] text-[11px] font-medium tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Shop (Opening 2027)</a>
+            <a href="#farmstand" className="text-[#3D2B1F] text-[11px] font-medium tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Farm Stand</a>
+            <a href="#contact" className="text-[#3D2B1F] text-[11px] font-medium tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Contact</a>
+            <a href="#reserve" className="bg-[#4A5D3A] text-white text-[11px] font-semibold tracking-[0.15em] uppercase font-source px-5 py-2 hover:bg-[#3E4F31] transition-colors">Reserve My Chickens</a>
           </div>
-
-          {/* Olive button right */}
-          <div className="hidden md:block">
-            <a
-              href="#reserve"
-              className="bg-[#4A5D3A] hover:bg-[#3E4F31] text-white px-5 py-2.5 text-xs font-source font-semibold uppercase tracking-[0.15em] transition-colors rounded-sm"
-            >
-              Reserve My Chickens
-            </a>
-          </div>
-
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
+          <button className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
             <span className={`block w-6 h-0.5 bg-[#3D2B1F] transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
             <span className={`block w-6 h-0.5 bg-[#3D2B1F] transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
             <span className={`block w-6 h-0.5 bg-[#3D2B1F] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
       </div>
-
-      {/* Mobile menu */}
       <div className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-96' : 'max-h-0'}`}>
-        <div className="bg-white border-t border-[#3D2B1F]/10 px-4 py-4 space-y-3">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="block text-[#3D2B1F] hover:text-[#8B2500] transition-colors text-sm font-medium tracking-wide uppercase font-source py-1"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            href="#reserve"
-            onClick={() => setMenuOpen(false)}
-            className="block bg-[#4A5D3A] text-white text-center px-5 py-2.5 font-source font-semibold text-sm uppercase tracking-wider mt-2 rounded-sm"
-          >
-            Reserve My Chickens
-          </a>
+        <div className="bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+          <a href="#home" onClick={() => setMenuOpen(false)} className="block text-[#3D2B1F] text-sm uppercase tracking-wider font-source py-1">Home</a>
+          <a href="#farm" onClick={() => setMenuOpen(false)} className="block text-[#3D2B1F] text-sm uppercase tracking-wider font-source py-1">Our Farm</a>
+          <a href="#shop" onClick={() => setMenuOpen(false)} className="block text-[#3D2B1F] text-sm uppercase tracking-wider font-source py-1">Shop (Opening 2027)</a>
+          <a href="#farmstand" onClick={() => setMenuOpen(false)} className="block text-[#3D2B1F] text-sm uppercase tracking-wider font-source py-1">Farm Stand</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)} className="block text-[#3D2B1F] text-sm uppercase tracking-wider font-source py-1">Contact</a>
+          <a href="#reserve" onClick={() => setMenuOpen(false)} className="block bg-[#4A5D3A] text-white text-center py-2.5 text-sm uppercase tracking-wider font-source font-semibold mt-2">Reserve My Chickens</a>
         </div>
       </div>
     </nav>

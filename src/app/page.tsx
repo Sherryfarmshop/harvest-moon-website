@@ -1,19 +1,21 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import OpeningBanner from '@/components/OpeningBanner';
-import WelcomeReservations from '@/components/WelcomeReservations';
-import ChickenReserve from '@/components/ChickenReserve';
-import Footer from '@/components/Footer';
+import AnnouncementStrip from '@/components/AnnouncementStrip';
+import WelcomeSection from '@/components/WelcomeSection';
+import WhyDifferent from '@/components/WhyDifferent';
+import FooterCTA from '@/components/FooterCTA';
+import FooterBar from '@/components/FooterBar';
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <OpeningBanner />
-      <WelcomeReservations />
-      <ChickenReserve />
-      <Footer />
+      <AnnouncementStrip />
+      <WelcomeSection />
+      <WhyDifferent />
+      <FooterCTA />
+      <FooterBar />
     </main>
   );
 }
