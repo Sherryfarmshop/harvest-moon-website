@@ -130,7 +130,7 @@ export default function ShopSection() {
               </div>
 
               {/* Reserve button — link to Shopify deposit product when ready */}
-              <a href="#reserve"
+              <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer"
                 className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.15em] rounded-sm w-full text-center"
                 style={{ color: '#FFF4DE', padding: '14px 28px', fontSize: '12px' }}>
                 Reserve My Chickens — $25 Deposit
@@ -186,3 +186,4 @@ export default function ShopSection() {
     </section>
   );
 }
+
