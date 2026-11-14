@@ -22,8 +22,8 @@ export default function Hero() {
           <Image
             src="/images/logo.jpg"
             alt="Harvest Moon Farm Shop"
-            width={112}
-            height={112}
+            width={140}
+            height={140}
             className=""
           />
         </div>
