@@ -41,22 +41,15 @@ export default function FooterBar() {
             </div>
           </div>
 
-          {/* Reserve + Social */}
+          {/* Social */}
           <div className="md:col-span-1">
             <h4 className="font-playfair font-bold mb-3" style={{ fontSize: '17px', color: '#FFF4DE' }}>
-              Reserve Chickens
+              Follow Along
             </h4>
             <p className="font-lora mb-4" style={{ fontSize: '13px', color: '#FFF4DE', opacity: 0.7, lineHeight: 1.6 }}>
-              $25 deposit per bird. Spots are limited.
+              See life on the farm, updates, and what we&apos;re growing.
             </p>
-            <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken"
-              target="_blank" rel="noopener noreferrer"
-              className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.12em] rounded-sm mb-5"
-              style={{ color: '#FFF4DE', padding: '10px 18px', fontSize: '11px' }}>
-              Reserve My Chickens
-            </a>
-            {/* Social icons */}
-            <div className="flex gap-4 mt-2">
+            <div className="flex gap-4">
               <a href="#" aria-label="Facebook" style={{ color: '#FFF4DE', opacity: 0.6 }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
               </a>
