@@ -91,23 +91,54 @@ export default function ShopSection() {
 
         <SectionDivider />
 
-        {/* ── SECTION 2: PASTURE-RAISED FARM FRESH ── */}
-        <div id="chicken" className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 className="font-playfair font-bold mb-2" style={{ fontSize: 'clamp(20px, 3vw, 24px)', color: '#4A3528' }}>
-              Pasture-Raised Farm Fresh
-            </h3>
-            <p className="font-lora mb-6" style={{ fontSize: '15px', color: '#6B5544', lineHeight: 1.6 }}>
-              Naturally raised on our Northern Michigan farm. Our chickens enjoy fresh pasture, sunshine, and room to roam — grown the way nature intended.
-            </p>
-            <a href="#reserve"
-              className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.15em] rounded-sm"
-              style={{ color: '#FFF4DE', padding: '12px 28px', fontSize: '12px' }}>
-              Reserve Your 2027 Chickens
-            </a>
-          </div>
-          <div style={{ borderRadius: '10px', overflow: 'hidden', aspectRatio: '4/3', position: 'relative' }}>
-            <Image src="/images/chicken-hero.jpg" alt="Pasture-raised chickens on our Northern Michigan farm" fill className="object-cover" />
+        {/* ── SECTION 2: PASTURE-RAISED WHOLE CHICKENS ── */}
+        <div id="chicken">
+          <h3 className="font-playfair font-bold mb-2" style={{ fontSize: 'clamp(20px, 3vw, 24px)', color: '#4A3528' }}>
+            Pasture-Raised Whole Chickens
+          </h3>
+          <p className="font-lora mb-6" style={{ fontSize: '15px', color: '#6B5544', lineHeight: 1.6 }}>
+            Naturally raised on our Northern Michigan farm with fresh pasture, sunshine, and room to roam.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Photo */}
+            <div style={{ borderRadius: '10px', overflow: 'hidden', aspectRatio: '4/3', position: 'relative' }}>
+              <Image src="/images/pasture-chicken.png" alt="2027 Pasture-Raised Whole Chicken from Harvest Moon Farm" fill className="object-cover" />
+            </div>
+
+            {/* Product info */}
+            <div style={{ background: 'white', borderRadius: '10px', padding: '28px', boxShadow: '0 2px 12px rgba(74,53,40,0.09)' }}>
+              <h4 className="font-playfair font-bold mb-1" style={{ fontSize: '20px', color: '#3D2B1F' }}>
+                2027 Pasture-Raised Whole Chicken
+              </h4>
+              <p className="font-lora font-bold mb-1" style={{ fontSize: '22px', color: '#4A5D3A' }}>
+                $25 deposit per chicken
+              </p>
+              <p className="font-lora mb-5" style={{ fontSize: '13px', color: '#8B7355', lineHeight: 1.6 }}>
+                Your $25 deposit secures your spot. Estimated total price is $40–$45 per chicken, with the remaining balance due at pickup. We'll contact you before pickup to confirm details.
+              </p>
+
+              {/* Quantity selector */}
+              <div className="flex items-center gap-3 mb-5">
+                <label className="font-source font-semibold uppercase tracking-wider" style={{ fontSize: '11px', color: '#3D2B1F' }}>
+                  Quantity
+                </label>
+                <select
+                  style={{ border: '1px solid #C9B896', borderRadius: '6px', padding: '8px 12px', background: '#F7F3ED', fontSize: '14px', color: '#3D2B1F', fontFamily: 'inherit' }}>
+                  {[1,2,3,4,5,6,7,8,9,10].map(n => <option key={n} value={n}>{n}</option>)}
+                </select>
+              </div>
+
+              {/* Reserve button — link to Shopify deposit product when ready */}
+              <a href="#reserve"
+                className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.15em] rounded-sm w-full text-center"
+                style={{ color: '#FFF4DE', padding: '14px 28px', fontSize: '12px' }}>
+                Reserve My Chickens — $25 Deposit
+              </a>
+              <p className="font-lora mt-3 text-center" style={{ fontSize: '12px', color: '#8B7355' }}>
+                Spots are limited. Reserve early to secure your 2027 chickens.
+              </p>
+            </div>
           </div>
         </div>
 
