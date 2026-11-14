@@ -15,7 +15,7 @@ const products = [
     description: 'Hot cocoa for four. Includes Santa\'s Favorite hot cocoa packets, snowflake marshmallows, candy canes, and a recipe card — a perfect little holiday gift for neighbors, teachers, or anyone who loves a cozy cup.',
     imgOpen: '/images/cocoa-box-open.png',
     imgClosed: '/images/cocoa-box-closed.png',
-    buyLink: '#', // Replace with Shopify/Square checkout link
+    buyLink: 'https://xbysrj-1m.myshopify.com/products/farmhouse-hot-cocoa-box'
   },
 ];
 
@@ -80,5 +80,6 @@ export default function ShopSection() {
     </section>
   );
 }
+
 
 
