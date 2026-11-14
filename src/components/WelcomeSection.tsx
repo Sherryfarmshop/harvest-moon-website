@@ -44,12 +44,14 @@ export default function WelcomeSection() {
           </div>
 
           {/* Right - tractor photo */}
-          <div className="relative overflow-hidden mt-6 md:mt-0" style={{ borderRadius: '12px', aspectRatio: '4/3' }}>
+          <div className="relative overflow-hidden mt-6 md:mt-0" style={{ borderRadius: '12px' }}>
             <Image
               src="/images/tractor-sunset.jpg"
               alt="Orange tractor at sunset on Harvest Moon Farm near Charlevoix Michigan"
-              fill
-              className="object-cover"
+              width={600}
+              height={450}
+              className="w-full h-auto object-cover"
+              style={{ borderRadius: '12px' }}
             />
           </div>
 
