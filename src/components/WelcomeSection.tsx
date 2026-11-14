@@ -78,7 +78,7 @@ export default function WelcomeSection() {
               <a href="#reserve" className="inline-block border-2 border-[#3D2B1F] text-[#3D2B1F] px-6 py-3 font-source font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-[#3D2B1F] hover:text-white transition-colors">
                 Reserve My Chickens
               </a>
-              <p className="font-lora text-[13px] text-[#8B7355] mt-3">$25 deposit per bird</p>
+              <p className="font-lora text-[15px] text-[#8B7355] mt-3 font-semibold">$25 deposit per bird</p>
             </div>
           </div>
 
