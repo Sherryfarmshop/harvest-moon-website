@@ -1,17 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactSection() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const body = `Name: ${form.name}%0AEmail: ${form.email}%0APhone: ${form.phone}%0AMessage: ${form.message}`;
-    window.location.href = `mailto:harvestmoonfarmshop@gmail.com?subject=Message from ${form.name}&body=${body}`;
-    setSubmitted(true);
-  };
+  const [state, handleSubmit] = useForm('mnpdjyzq');
 
   return (
     <section id="contact" style={{ background: '#F7F3ED' }} className="py-12 md:py-16">
@@ -34,7 +26,6 @@ export default function ContactSection() {
 
           {/* Left — Contact info + 2027 notice */}
           <div>
-            {/* Contact info */}
             <div style={{ background: 'white', borderRadius: '10px', padding: '28px', boxShadow: '0 2px 12px rgba(74,53,40,0.08)', marginBottom: '24px' }}>
               <h3 className="font-playfair font-bold mb-5" style={{ fontSize: '20px', color: '#4A3528' }}>
                 Contact Information
@@ -59,7 +50,6 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* 2027 Opening notice */}
             <div style={{ background: '#4A3528', borderRadius: '10px', padding: '28px', color: '#FFF4DE' }}>
               <h3 className="font-playfair font-bold mb-3" style={{ fontSize: '20px', color: '#FFF4DE' }}>
                 Farm Shop Opening in 2027!
@@ -78,54 +68,61 @@ export default function ContactSection() {
             <h3 className="font-playfair font-bold mb-5" style={{ fontSize: '20px', color: '#4A3528' }}>
               Send Us a Message
             </h3>
-            {submitted ? (
-              <div style={{ textAlign: 'center', padding: '20px' }}>
-                <div style={{ fontSize: '2rem', marginBottom: '10px' }}>✅</div>
-                <p className="font-lora" style={{ color: '#4A5D3A', fontWeight: 600 }}>Message sent! We&apos;ll get back to you soon.</p>
+
+            {state.succeeded ? (
+              <div style={{ textAlign: 'center', padding: '30px 20px' }}>
+                <div style={{ fontSize: '2.5rem', marginBottom: '12px' }}>✅</div>
+                <p className="font-playfair font-bold" style={{ color: '#4A5D3A', fontSize: '18px', marginBottom: '8px' }}>Message sent!</p>
+                <p className="font-lora" style={{ color: '#6B5544', fontSize: '15px' }}>We&apos;ll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+
                 <div>
                   <label className="font-source" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#3D2B1F', display: 'block', marginBottom: '6px' }}>
                     Your Name *
                   </label>
-                  <input required value={form.name} onChange={e => setForm({...form, name: e.target.value})}
-                    placeholder="Sherry Smith"
+                  <input required name="name" placeholder="Your name"
                     style={{ width: '100%', padding: '12px', border: '1px solid #C9B896', borderRadius: '6px', background: '#F7F3ED', fontSize: '15px', outline: 'none', boxSizing: 'border-box' }} />
+                  <ValidationError field="name" prefix="Name" errors={state.errors} />
                 </div>
+
                 <div>
                   <label className="font-source" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#3D2B1F', display: 'block', marginBottom: '6px' }}>
                     Email Address *
                   </label>
-                  <input required type="email" value={form.email} onChange={e => setForm({...form, email: e.target.value})}
-                    placeholder="you@email.com"
+                  <input required type="email" name="email" placeholder="you@email.com"
                     style={{ width: '100%', padding: '12px', border: '1px solid #C9B896', borderRadius: '6px', background: '#F7F3ED', fontSize: '15px', outline: 'none', boxSizing: 'border-box' }} />
+                  <ValidationError field="email" prefix="Email" errors={state.errors} />
                 </div>
+
                 <div>
                   <label className="font-source" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#3D2B1F', display: 'block', marginBottom: '6px' }}>
                     Phone Number
                   </label>
-                  <input value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}
-                    placeholder="(231) 555-0000"
+                  <input name="phone" placeholder="(231) 555-0000"
                     style={{ width: '100%', padding: '12px', border: '1px solid #C9B896', borderRadius: '6px', background: '#F7F3ED', fontSize: '15px', outline: 'none', boxSizing: 'border-box' }} />
                 </div>
+
                 <div>
                   <label className="font-source" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#3D2B1F', display: 'block', marginBottom: '6px' }}>
                     Message *
                   </label>
-                  <textarea required value={form.message} onChange={e => setForm({...form, message: e.target.value})}
-                    placeholder="Tell us about your order, questions, or visit..."
-                    rows={4}
+                  <textarea required name="message" placeholder="Tell us about your order, questions, or visit..." rows={4}
                     style={{ width: '100%', padding: '12px', border: '1px solid #C9B896', borderRadius: '6px', background: '#F7F3ED', fontSize: '15px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
+                  <ValidationError field="message" prefix="Message" errors={state.errors} />
                 </div>
-                <button type="submit"
+
+                <button type="submit" disabled={state.submitting}
                   className="bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.15em] rounded-sm"
-                  style={{ color: '#FFF4DE', padding: '14px', fontSize: '12px', border: 'none', cursor: 'pointer' }}>
-                  Send Message
+                  style={{ color: '#FFF4DE', padding: '14px', fontSize: '12px', border: 'none', cursor: 'pointer', opacity: state.submitting ? 0.7 : 1 }}>
+                  {state.submitting ? 'Sending...' : 'Send Message'}
                 </button>
+
               </form>
             )}
           </div>
+
         </div>
       </div>
     </section>
