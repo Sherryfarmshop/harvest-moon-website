@@ -58,9 +58,6 @@ export default function WhyDifferent() {
     <section id="why-different" className="py-10 md:py-14 bg-[#F7F3ED] border-t border-[#D6CCBC]/30">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-8">
-          <p className="font-source text-[10px] uppercase tracking-[0.35em] text-[#8B7355] mb-2">
-            Raised with Care
-          </p>
           <h2 className="font-playfair text-[1.8rem] sm:text-[2rem] text-[#3D2B1F] italic">
             Why Our Chickens Are Different
           </h2>
