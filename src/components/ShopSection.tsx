@@ -7,7 +7,7 @@ const products = [
     description: 'A cozy Christmas breakfast for your family. Filled with pancake mix, Harvest Moon maple syrup, Christmas jam, chocolate chips, hot cocoa, snowman marshmallow toppers, and a candy cane — everything you need for a warm holiday morning.',
     imgOpen: '/images/breakfast-box-open.png',
     imgClosed: '/images/breakfast-box-closed.png',
-    buyLink: '#', // Replace with Shopify/Square checkout link
+    buyLink: 'https://xbysrj-1m.myshopify.com/products/farmhouse-breakfast-box',
   },
   {
     name: 'Hot Cocoa Farmhouse Box',
@@ -61,8 +61,7 @@ export default function ShopSection() {
                 <p className="font-lora mb-5" style={{ fontSize: '15px', color: '#6B5544', lineHeight: 1.6 }}>
                   {product.description}
                 </p>
-                <a
-                  href={product.buyLink}
+                <a href={product.buyLink} target="_blank" rel="noopener noreferrer"
                   className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] transition-colors font-source font-semibold uppercase tracking-[0.15em] rounded-sm"
                   style={{ color: '#FFF4DE', padding: '12px 28px', fontSize: '12px' }}
                 >
@@ -81,3 +80,5 @@ export default function ShopSection() {
     </section>
   );
 }
+
+
