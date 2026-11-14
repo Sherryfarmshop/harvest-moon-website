@@ -9,6 +9,20 @@ html {
 body {
   color: #3D2B1F;
   background-color: #FEFEFE;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+/* Descriptive / body text — 18px desktop, 16px mobile */
+.font-lora {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .font-lora {
+    font-size: 16px;
+  }
 }
 
 @layer base {
