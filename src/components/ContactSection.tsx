@@ -49,9 +49,9 @@ export default function ContactSection() {
                   📞 <a href="tel:7347160475" style={{ color: '#4A5D3A', fontWeight: 600 }}>734-716-0475</a>
                 </div>
                 <div>
-                  ✉ <a href="mailto:harvestmoonfarmshop@gmail.com" style={{ color: '#4A5D3A', fontWeight: 600 }}>
+                  ✉ <span style={{ color: '#4A5D3A', fontWeight: 600 }}>
                     harvestmoonfarmshop@gmail.com
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>
