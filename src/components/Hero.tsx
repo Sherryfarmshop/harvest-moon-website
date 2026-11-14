@@ -2,15 +2,66 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative w-full mt-14" style={{ fontSize: 0, lineHeight: 0 }}>
+    <section id="home" className="relative min-h-[600px] md:min-h-[700px] flex items-center mt-14 overflow-hidden">
+      {/* Background photo */}
       <Image
         src="/images/chicken-hero.jpg"
-        alt="Harvest Moon Farm Shop — Pasture-Raised Chickens — Reservations Now Open for 2027"
-        width={1920}
-        height={720}
-        className="w-full h-auto block"
+        alt="Pasture-raised hens at golden hour at Harvest Moon Farm"
+        fill
+        className="object-cover object-center"
         priority
       />
+      {/* Dark gradient overlay — left side for text readability */}
+      <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(30,20,10,0.72) 0%, rgba(30,20,10,0.45) 55%, rgba(30,20,10,0.08) 100%)' }} />
+
+      {/* Text content */}
+      <div className="relative z-10 px-6 sm:px-10 md:px-16 max-w-2xl py-16">
+
+        {/* Logo */}
+        <div className="mb-6">
+          <Image
+            src="/images/logo.jpg"
+            alt="Harvest Moon Farm Shop"
+            width={90}
+            height={90}
+            className="rounded-full shadow-lg"
+          />
+        </div>
+
+        {/* Small caps subtitle */}
+        <p className="font-source text-[11px] uppercase tracking-[0.35em] text-white/70 mb-4">
+          Pasture-Raised Chickens
+        </p>
+
+        {/* Main headline */}
+        <h1 className="font-playfair text-[2.4rem] sm:text-[3rem] md:text-[3.4rem] text-white leading-[1.1] italic mb-5">
+          Reserve Your 2027<br />Chickens Today
+        </h1>
+
+        {/* Decorative flourish */}
+        <div className="flex items-center gap-1 mb-5 text-white/35">
+          <span className="text-[11px] tracking-[0.4em]">‹‹‹‹</span>
+        </div>
+
+        {/* Description */}
+        <p className="font-lora text-[15px] text-white/80 mb-8 leading-relaxed">
+          Raised on pasture in Northern Michigan<br />
+          with room to roam and natural sunshine.
+        </p>
+
+        {/* CTA Button */}
+        <a
+          href="#reserve"
+          className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] text-white px-7 py-3.5 font-source font-semibold text-[11px] uppercase tracking-[0.2em] transition-colors rounded-sm shadow-lg"
+        >
+          Reserve My Chickens
+        </a>
+
+        {/* Deposit note */}
+        <p className="font-lora text-[14px] font-semibold text-white/60 mt-4">
+          $25 deposit per bird
+        </p>
+      </div>
     </section>
   );
 }
