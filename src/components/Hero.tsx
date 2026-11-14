@@ -24,7 +24,7 @@ export default function Hero() {
             alt="Harvest Moon Farm Shop"
             width={112}
             height={112}
-            className="rounded-full"
+            className=""
           />
         </div>
 
