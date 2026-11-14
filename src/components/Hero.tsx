@@ -6,25 +6,25 @@ export default function Hero() {
       {/* Background photo */}
       <Image
         src="/images/chicken-hero.jpg"
-        alt="Pasture-raised hens at golden hour at Harvest Moon Farm"
+        alt="Pasture-raised chickens on our Northern Michigan family farm near Charlevoix"
         fill
         className="object-cover object-center"
         priority
       />
-      {/* Dark gradient overlay — left side for text readability */}
+      {/* Dark gradient overlay */}
       <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, rgba(30,20,10,0.72) 0%, rgba(30,20,10,0.45) 55%, rgba(30,20,10,0.08) 100%)' }} />
 
       {/* Text content */}
       <div className="relative z-10 px-6 sm:px-10 md:px-16 max-w-2xl py-16">
 
-        {/* Logo */}
+        {/* Logo — no white circle, 25% larger */}
         <div className="mb-6">
           <Image
             src="/images/logo.jpg"
             alt="Harvest Moon Farm Shop"
-            width={90}
-            height={90}
-            className="rounded-full shadow-lg"
+            width={112}
+            height={112}
+            className="rounded-full"
           />
         </div>
 
@@ -33,9 +33,10 @@ export default function Hero() {
           Pasture-Raised Chickens
         </p>
 
-        {/* Main headline */}
+        {/* Main headline — H1 for SEO */}
         <h1 className="font-playfair text-[2.4rem] sm:text-[3rem] md:text-[3.4rem] text-white leading-[1.1] italic mb-5">
-          Reserve Your 2027<br />Chickens Today
+          Reserve Your 2027<br />
+          Pasture-Raised Chickens
         </h1>
 
         {/* Decorative flourish */}
@@ -43,10 +44,9 @@ export default function Hero() {
           <span className="text-[11px] tracking-[0.4em]">‹‹‹‹</span>
         </div>
 
-        {/* Description */}
+        {/* Description — SEO optimized */}
         <p className="font-lora text-[15px] text-white/80 mb-8 leading-relaxed">
-          Raised on pasture in Northern Michigan<br />
-          with room to roam and natural sunshine.
+          Locally raised pasture-raised chicken near Charlevoix, Michigan. Our chickens enjoy fresh pasture, natural sunshine, and room to roam on our Northern Michigan family farm.
         </p>
 
         {/* CTA Button */}
@@ -57,9 +57,9 @@ export default function Hero() {
           Reserve My Chickens
         </a>
 
-        {/* Deposit note */}
-        <p className="font-lora text-[14px] font-semibold text-white/60 mt-4">
-          $25 deposit per bird
+        {/* Deposit note — larger, bold, bright white */}
+        <p className="font-lora text-[18px] font-bold text-white mt-4 uppercase tracking-[0.1em]">
+          $25 Deposit Per Bird
         </p>
       </div>
     </section>

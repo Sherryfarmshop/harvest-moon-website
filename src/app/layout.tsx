@@ -21,11 +21,9 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: 'Harvest Moon Farm Shop | Northern Michigan Farm Market near Charlevoix',
-  description:
-    'A cozy Northern Michigan farm market near Charlevoix. Farm fresh eggs, seasonal produce, curated farm boxes, gathered goods, and peaceful farm stays. Stop in, slow down, and take a little piece of the farm home.',
-  keywords:
-    'Northern Michigan farm shop, Charlevoix farm market, farm fresh eggs, farm stay Charlevoix, gathered goods, farm boxes, US-31 Charlevoix',
+  title: 'Pasture-Raised Chicken in Charlevoix, MI | Harvest Moon Farm Shop',
+  description: 'Reserve pasture-raised chicken for 2027 from Harvest Moon Farm Shop near Charlevoix, Michigan. Locally raised on our Northern Michigan family farm.',
+  keywords: 'pasture-raised chicken Northern Michigan, pasture-raised chicken Charlevoix MI, farm-raised chicken near Charlevoix, local pasture-raised chicken Michigan, reserve pasture-raised chicken 2027',
   openGraph: {
     title: 'Harvest Moon Farm Shop',
     description:
