@@ -25,7 +25,7 @@ export default function ShopSection() {
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="font-playfair font-bold mb-2" style={{ fontSize: 'clamp(24px, 4vw, 30px)', color: '#3D2B1F' }}>
-            The Farm Shop
+            Shop by Collection
           </h2>
           <div className="flex items-center justify-center gap-1 mb-2 text-[#8B7355]/40">
             <span className="text-[10px] tracking-[0.3em]">‹‹‹‹</span>
@@ -33,6 +33,13 @@ export default function ShopSection() {
           <p className="font-lora" style={{ fontSize: '16px', color: '#6B5544', lineHeight: 1.5 }}>
             Farmhouse gifts and cozy Northern Michigan favorites, ready to ship.
           </p>
+        </div>
+
+        {/* Collection label */}
+        <div className="mb-5">
+          <h3 className="font-playfair font-bold" style={{ fontSize: '18px', color: '#4A3528', borderBottom: '2px solid #C9B896', paddingBottom: '8px', display: 'inline-block' }}>
+            Seasonal Favorites
+          </h3>
         </div>
 
         {/* Product grid — 3 per row desktop, 2 per row mobile */}
