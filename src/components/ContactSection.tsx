@@ -3,7 +3,13 @@
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactSection() {
-  const [state, handleSubmit] = useForm('mnpdjyzq');
+  const [state, handleFormspree] = useForm('mnpdjyzq');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    await handleFormspree(e);
+  };
 
   return (
     <section id="contact" style={{ background: '#F7F3ED' }} className="py-12 md:py-16">
@@ -91,7 +97,7 @@ export default function ContactSection() {
                   <label className="font-source" style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#3D2B1F', display: 'block', marginBottom: '6px' }}>
                     Email Address *
                   </label>
-                  <input required type="email" name="email" placeholder="you@email.com"
+                  <input required type="email" name="email" placeholder="you@email.com" autoComplete="off"
                     style={{ width: '100%', padding: '12px', border: '1px solid #C9B896', borderRadius: '6px', background: '#F7F3ED', fontSize: '15px', outline: 'none', boxSizing: 'border-box' }} />
                   <ValidationError field="email" prefix="Email" errors={state.errors} />
                 </div>
@@ -128,3 +134,5 @@ export default function ContactSection() {
     </section>
   );
 }
+
+
