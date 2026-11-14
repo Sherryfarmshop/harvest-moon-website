@@ -51,7 +51,7 @@ export default function HowReservations() {
               </div>
             </div>
             <div className="mt-10">
-              <a href="#reserve-form" className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] text-[#F5F0E8] px-6 py-3 font-source font-semibold text-[11px] uppercase tracking-[0.2em] transition-colors rounded-sm">
+              <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] text-[#F5F0E8] px-6 py-3 font-source font-semibold text-[11px] uppercase tracking-[0.2em] transition-colors rounded-sm">
                 Reserve My Chickens
               </a>
               <p className="font-lora text-[18px] font-bold text-[#8B7355] mt-3">$25 deposit per bird</p>
@@ -63,4 +63,5 @@ export default function HowReservations() {
     </section>
   );
 }
+
 

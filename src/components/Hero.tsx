@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* CTA Button */}
         <a
-          href="#reserve"
+          href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer"
           className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] text-white px-7 py-3.5 font-source font-semibold text-[11px] uppercase tracking-[0.2em] transition-colors rounded-sm shadow-lg"
         >
           Reserve My Chickens
@@ -65,3 +65,4 @@ export default function Hero() {
     </section>
   );
 }
+

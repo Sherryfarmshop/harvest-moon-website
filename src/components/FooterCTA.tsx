@@ -21,7 +21,7 @@ export default function FooterCTA() {
             <p className="font-lora text-[13px] text-[#F0EBE1]/50 leading-relaxed mb-5">
               Reserve today with a $25 deposit per bird.
             </p>
-            <a href="#reserve" className="inline-block bg-[#4A5D3A] text-white px-5 py-2.5 font-source font-semibold text-[11px] uppercase tracking-[0.15em] hover:bg-[#3E4F31] transition-colors">
+            <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#4A5D3A] text-white px-5 py-2.5 font-source font-semibold text-[11px] uppercase tracking-[0.15em] hover:bg-[#3E4F31] transition-colors">
               Reserve My Chickens
             </a>
           </div>
@@ -70,3 +70,4 @@ export default function FooterCTA() {
     </section>
   );
 }
+

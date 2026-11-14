@@ -36,7 +36,7 @@ export default function WelcomeSection() {
             <p className="font-lora mb-5" style={{ fontSize: 'clamp(17px, 2vw, 18px)', color: '#FFF4DE', lineHeight: 1.5 }}>
               Families in Charlevoix, Petoskey, Boyne City, East Jordan, and the surrounding communities are welcome to reserve. Spots are limited, so we encourage you to reserve early.
             </p>
-            <a href="#reserve"
+            <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer"
               className="inline-block bg-[#4A5D3A] hover:bg-[#3E4F31] font-source font-semibold uppercase tracking-[0.15em] transition-colors rounded-sm"
               style={{ color: '#FFF4DE', padding: '11px 26px', fontSize: '12px' }}>
               Reserve Your 2027 Chickens
@@ -101,3 +101,4 @@ export default function WelcomeSection() {
     </section>
   );
 }
+

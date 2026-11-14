@@ -75,7 +75,7 @@ export default function Navbar() {
             </div>
 
             <a href="#contact" className={linkClass}>Contact</a>
-            <a href="#reserve" className="bg-[#4A5D3A] text-white text-[11px] font-semibold tracking-[0.15em] uppercase font-source px-5 py-2 hover:bg-[#3E4F31] transition-colors rounded-sm">Reserve My Chickens</a>
+            <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer" className="bg-[#4A5D3A] text-white text-[11px] font-semibold tracking-[0.15em] uppercase font-source px-5 py-2 hover:bg-[#3E4F31] transition-colors rounded-sm">Reserve My Chickens</a>
           </div>
 
           {/* Mobile hamburger */}
@@ -119,12 +119,13 @@ export default function Navbar() {
           )}
 
           <a href="#contact" onClick={() => setMenuOpen(false)} className={mobileLinkClass}>Contact</a>
-          <a href="#reserve" onClick={() => setMenuOpen(false)} className="block bg-[#4A5D3A] text-white text-center py-2.5 text-sm uppercase tracking-wider font-source font-semibold mt-2 rounded-sm">Reserve My Chickens</a>
+          <a href="https://xbysrj-1m.myshopify.com/products/2027-pasture-raised-whole-chicken" target="_blank" rel="noopener noreferrer" className="block bg-[#4A5D3A] text-white text-center py-2.5 text-sm uppercase tracking-wider font-source font-semibold mt-2 rounded-sm">Reserve My Chickens</a>
         </div>
       </div>
     </nav>
   );
 }
+
 
 
 
