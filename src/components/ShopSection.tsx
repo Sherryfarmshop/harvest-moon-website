@@ -15,6 +15,13 @@ const seasonalProducts = [
     img: '/images/cocoa-box-open.png',
     buyLink: 'https://xbysrj-1m.myshopify.com/products/farmhouse-hot-cocoa-box',
   },
+  {
+    name: 'Night Before Christmas Cocoa Storytime Box',
+    price: '$39.99',
+    description: 'The Night Before Christmas book, hot cocoa, candy canes & farmhouse treats for a cozy holiday night.',
+    img: '/images/christmas-book-kit-open.png',
+    buyLink: 'https://xbysrj-1m.myshopify.com/products/the-night-before-christmas-cocoa-storytime-box',
+  },
 ];
 
 const emptyCollections = [
