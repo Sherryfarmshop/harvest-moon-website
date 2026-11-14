@@ -21,8 +21,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-8 mx-auto">
             <a href="#home" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Home</a>
             <a href="#gallery" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Our Farm</a>
-            <a href="#contact" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Contact</a>
-            {/* Hidden until spring 2027: Shop (Opening 2027) | Farm Stand */}
+            <a href="#shop" class="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Shop</a><a href="#contact" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Contact</a>
             <a href="#reserve" className="bg-[#4A5D3A] text-white text-[11px] font-semibold tracking-[0.15em] uppercase font-source px-5 py-2 hover:bg-[#3E4F31] transition-colors rounded-sm">Reserve My Chickens</a>
           </div>
 
@@ -41,11 +40,11 @@ export default function Navbar() {
           <a href="#home" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Home</a>
           <a href="#gallery" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Our Farm</a>
           <a href="#contact" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Contact</a>
-          {/* Hidden until spring 2027: Shop (Opening 2027) | Farm Stand */}
           <a href="#reserve" onClick={() => setMenuOpen(false)} className="block bg-[#4A5D3A] text-white text-center py-2.5 text-sm uppercase tracking-wider font-source font-semibold mt-2 rounded-sm">Reserve My Chickens</a>
         </div>
       </div>
     </nav>
   );
 }
+
 
