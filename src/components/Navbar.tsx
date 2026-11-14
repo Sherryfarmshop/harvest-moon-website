@@ -12,6 +12,9 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const linkClass = "text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors";
+  const mobileLinkClass = "block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1";
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-6">
@@ -19,9 +22,10 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 mx-auto">
-            <a href="#home" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Home</a>
-            <a href="#gallery" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Our Farm</a>
-            <a href="#shop" class="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Shop</a><a href="#contact" className="text-[#292929] text-[11px] font-bold tracking-[0.2em] uppercase font-source hover:text-[#8B2500] transition-colors">Contact</a>
+            <a href="#home" className={linkClass}>Home</a>
+            <a href="#gallery" className={linkClass}>Our Farm</a>
+            <a href="#shop" className={linkClass}>Shop</a>
+            <a href="#contact" className={linkClass}>Contact</a>
             <a href="#reserve" className="bg-[#4A5D3A] text-white text-[11px] font-semibold tracking-[0.15em] uppercase font-source px-5 py-2 hover:bg-[#3E4F31] transition-colors rounded-sm">Reserve My Chickens</a>
           </div>
 
@@ -37,14 +41,13 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div className={`md:hidden transition-all duration-300 overflow-hidden ${menuOpen ? 'max-h-64' : 'max-h-0'}`}>
         <div className="bg-white border-t border-gray-100 px-6 py-4 space-y-3">
-          <a href="#home" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Home</a>
-          <a href="#gallery" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Our Farm</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)} className="block text-[#292929] text-sm font-bold uppercase tracking-wider font-source py-1">Contact</a>
+          <a href="#home" onClick={() => setMenuOpen(false)} className={mobileLinkClass}>Home</a>
+          <a href="#gallery" onClick={() => setMenuOpen(false)} className={mobileLinkClass}>Our Farm</a>
+          <a href="#shop" onClick={() => setMenuOpen(false)} className={mobileLinkClass}>Shop</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)} className={mobileLinkClass}>Contact</a>
           <a href="#reserve" onClick={() => setMenuOpen(false)} className="block bg-[#4A5D3A] text-white text-center py-2.5 text-sm uppercase tracking-wider font-source font-semibold mt-2 rounded-sm">Reserve My Chickens</a>
         </div>
       </div>
     </nav>
   );
 }
-
-
