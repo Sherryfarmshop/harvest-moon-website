@@ -6,7 +6,6 @@ import WhyDifferent from '@/components/WhyDifferent';
 import WelcomeSection from '@/components/WelcomeSection';
 import ShopSection from '@/components/ShopSection';
 import ContactSection from '@/components/ContactSection';
-import FooterCTA from '@/components/FooterCTA';
 import FooterBar from '@/components/FooterBar';
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <WelcomeSection />
       <ShopSection />
       <ContactSection />
-      <FooterCTA />
       <FooterBar />
     </main>
   );
